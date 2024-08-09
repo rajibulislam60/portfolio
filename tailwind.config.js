@@ -6,6 +6,9 @@ export default {
       maxWidth: {
         container: "1320px",
       },
+      fontFamily: {
+        jost: ["Jost", "sans-serif"],
+      },
     },
   },
   plugins: [],
