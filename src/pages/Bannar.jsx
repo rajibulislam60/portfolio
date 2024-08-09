@@ -5,9 +5,9 @@ import Button from '../Components/Button';
 
 const Bannar = () => {
   return (
-    <div className="bg-slate-400">
+    <div className="h-screen flex bg-slate-400">
       <Container>
-        <div className="flex justify-between items-center">
+        <div className=" h-full flex justify-between items-center object-cover">
           <div>
             <h3 className="uppercase font-normal text-[20px]">
               I am mern stack developer
