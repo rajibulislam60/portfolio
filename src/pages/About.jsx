@@ -15,12 +15,12 @@ const About = () => {
             <img src={BannarImage} alt="Profile Picture" />
           </div>
           <div>
-            <h3 className="uppercase font-normal text-[20px]">About me</h3>
-            <h1 className="text-[60px] leading-1.7 font-bold mt-[40px]">
+            <h3 className="font-normal text-[20px]">About me</h3>
+            <h2 className="text-[60px] leading-1.7 font-bold mt-[40px]">
               I Can Design Anything
               <br />
               You Want
-            </h1>
+            </h2>
             <p className="text-[18px] leading-1.7 font-light mt-[20px] max-w-[663px] text-slate-400">
               Nam libero tempore, cum soluta nobis est eligendi optio cumque
               nihil impedit quo minus id quod maxime placeat facere possimus,
@@ -83,10 +83,13 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <Button
-                className="bg-orange-600 text-white px-5 py-3 text-[21px] font-medium rounded-md hover:bg-black duration-[0.4s] max-w-[228px] mt-[70px]"
-                name="Download My CV"
-              />
+              <div className='mt-[70px]'>
+                <Button
+                  className="bg-orange-600 text-white px-5 py-3 text-[21px] font-medium rounded-md hover:bg-black duration-[0.4s] max-w-[228px] mt-[70px]"
+                  name="Download My CV"
+                  to="/CV"
+                />
+              </div>
             </div>
           </div>
         </div>

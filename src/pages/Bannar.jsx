@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BannarImage from '../assets/BannarPic.png';
 import Container from '../Components/Container';
 import Button from '../Components/Button';
 
 const Bannar = () => {
+
   return (
     <div className="h-screen flex bg-slate-400">
       <Container>
@@ -22,10 +23,13 @@ const Bannar = () => {
               omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
               autem quibusdam et.
             </p>
-            <Button
-              className="bg-orange-600 text-white px-5 py-3 text-[21px] font-medium rounded-md hover:bg-black duration-[0.4s] max-w-[228px] mt-[50px]"
-              name="Download My CV"
-            />
+            <div className='mt-[50px]'>
+              <Button
+                className="bg-orange-600 text-white px-5 py-3 text-[21px] font-medium rounded-md hover:bg-black duration-[0.4s] max-w-[228px] mt-[50px]"
+                name="Download My CV"
+                to="/CV"
+              />
+            </div>
           </div>
           <div>
             <img src={BannarImage} alt="Profile Picture" />

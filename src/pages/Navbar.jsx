@@ -28,6 +28,16 @@ const Navbar = () => {
                 item="About"
                 to="/about"
               />
+              <ListItem
+                className="nav-item hover:text-orange-400"
+                item="Service"
+                to="/service"
+              />
+              <ListItem
+                className="nav-item hover:text-orange-400"
+                item="Resume"
+                to="/resume"
+              />
               {/* Add more ListItems as needed */}
             </List>
             <Button

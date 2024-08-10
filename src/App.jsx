@@ -3,6 +3,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from './pages/Navbar';
 import Bannar from './pages/Bannar';
 import About from './pages/About';
+import CV from './Components/CV';
+import Service from './pages/Service';
+import Resume from './pages/Resume';
 
 const Layout = () => (
   <>
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "cv",
+        element: <CV />,
+      },
+      {
+        path: "service",
+        element: <Service />,
+      },
+      {
+        path: "resume",
+        element: <Resume />,
       },
     ],
   },
