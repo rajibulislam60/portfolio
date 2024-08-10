@@ -6,6 +6,7 @@ import About from './pages/About';
 import CV from './Components/CV';
 import Service from './pages/Service';
 import Resume from './pages/Resume';
+import Work from './pages/Work';
 
 const Layout = () => (
   <>
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "resume",
         element: <Resume />,
+      },
+      {
+        path: "work",
+        element: <Work />,
       },
     ],
   },

@@ -38,6 +38,11 @@ const Navbar = () => {
                 item="Resume"
                 to="/resume"
               />
+              <ListItem
+                className="nav-item hover:text-orange-400"
+                item="Work"
+                to="/work"
+              />
               {/* Add more ListItems as needed */}
             </List>
             <Button
