@@ -7,6 +7,7 @@ import CV from './Components/CV';
 import Service from './pages/Service';
 import Resume from './pages/Resume';
 import Work from './pages/Work';
+import Contact from './pages/Contact';
 
 const Layout = () => (
   <>
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "work",
         element: <Work />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

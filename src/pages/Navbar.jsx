@@ -4,6 +4,7 @@ import List from "../Components/List";
 import ListItem from "../Components/ListItem";
 import Button from "../Components/Button";
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -42,6 +43,11 @@ const Navbar = () => {
                 className="nav-item hover:text-orange-400"
                 item="Work"
                 to="/work"
+              />
+              <ListItem
+                className="nav-item hover:text-orange-400"
+                item="Contact"
+                to="/contact"
               />
               {/* Add more ListItems as needed */}
             </List>

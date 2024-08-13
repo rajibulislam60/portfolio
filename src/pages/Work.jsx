@@ -15,29 +15,33 @@ const Work = () => {
     slidesToScroll: 1
   }
   return (
-    <div className="bg-slate-400 py-11">
+    <div className="bg-slate-400 py-11 object-cover h-screen items-center flex">
       <Container>
-        <div className="w-3/4 mx-auto">
-          <div>
-            <Slider {...settings}>
-              {data.map((d) => (
-                <div className="">
-                  <div className="bg-white h-[400px] rounded-md text-center mx-[10px]">
-                    <div className="w-[300px] h-auto mx-auto">
-                      <img
-                        src={d.img}
-                        alt="image"
-                        className="w-full h-[300px] object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h2>{d.name}</h2>
-                      <p>{d.review}</p>
+        <div className=''>
+          <div className="w-3/4 mx-auto">
+            <div>
+              <Slider {...settings}>
+                {data.map((d) => (
+                  <div className="">
+                    <div className="bg-white h-[500px] rounded-md text-center mx-[10px]">
+                      <div className=" h-auto mx-auto bg-teal-200">
+                        <img
+                          src={d.img}
+                          alt="image"
+                          className="w-full h-[300px] object-cover mx-auto"
+                        />
+                      </div>
+                      <div className="mt-10">
+                        <h2 className="text-[24px] font-semibold mb-2">
+                          {d.name}
+                        </h2>
+                        <p>{d.review}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </Slider>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </Container>
